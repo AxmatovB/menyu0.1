@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: cursive;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;   
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: black;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            font-family: cursive;
+        }
+        p{
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body >
+    <h1>Salom. Biz haqimizda ko'proq ma'lumot olish uchun pastni bos</h1>
+    <div class="container">
+        <button onclick="toggleMessage()">Bosing!</button>
+        <p id="message" style="display: none; color: white;">Kompyuter injiniringi (Computer Engineering) fakulteti – bu dasturiy va apparat ta’minotini ishlab chiqish, kompyuter tizimlarini loyihalash, tarmoq texnologiyalari va sun’iy intellekt kabi sohalarga yo‘naltirilgan ta’lim yo‘nalishidir. Ushbu fakultet axborot texnologiyalari bilan bog‘liq sohalarda yetakchi mutaxassislarni tayyorlashga qaratilgan.</p>
+    </div>
+    <script>
+        function toggleMessage() {
+            let message = document.getElementById('message');
+            if (message.style.display === 'none' || message.style.display === '') {
+                message.style.display = 'block'; 
+            } else {
+                message.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
